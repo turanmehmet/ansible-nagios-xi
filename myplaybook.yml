@@ -1,0 +1,7 @@
+- hosts: web
+  tasks:
+  - name: Update hostname
+    import_role:
+      name: ansible-hostname-role
+    vars:
+      hostname: "{{ inventory_hostname  }}"
