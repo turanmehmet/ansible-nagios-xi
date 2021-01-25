@@ -1,2 +1,5 @@
 ---
-# handlers file for install-ncpa
+- name: restart_ncpa
+  systemd:
+    name: ncpa_listener
+    state: restarted

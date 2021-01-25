@@ -1,2 +1,27 @@
 ---
-# tasks file for install-ncpa
+# - name: Setup  a repo
+#   shell: "rpm -Uvh http://repo.nagios.com/nagios/7/nagios-repo-7-4.el7.noarch.rpm"
+#   ignore_errors: true
+# - name: Install ncpa
+#   package: 
+#     name: ncpa
+#     state: latest
+
+# - name: Download NCPA  CentOS 7
+#   get_url: url=http://repo.nagios.com/nagios/7/nagios-repo-7-4.el7.noarch.rpm dest=/tmp/ncpa.rpm
+- name: Download NCPA (RedHat & CentOS 64)
+  get_url: url=https://assets.nagios.com/downloads/ncpa/ncpa-latest.el{{ ansible_distribution_major_version }}.x86_64.rpm dest=/tmp/ncpa.rpm
+  when: ansible_os_family == "RedHat" and ansible_architecture == "x86_64"
+
+- name: Install NCPA
+  yum:
+    name: /tmp/ncpa.rpm
+    state: present
+
+
+- name: Change_password
+  lineinfile:
+    dest: /usr/local/ncpa/etc/ncpa.cfg
+    regexp: ^community_string
+    line: "community_string = iQEqup4PbSpH"
+  notify: restart_ncpa

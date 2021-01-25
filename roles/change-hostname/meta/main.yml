@@ -1,10 +1,10 @@
 galaxy_info:
   author: Mehmet Turan
-  description: Updates hostname
+  description: A simple role which updates hostname
   license: MIT
-  min_ansible_version: 2.9
-  galaxy_tags: []
-    -hostname 
+  min_ansible_version: 2.4
+  galaxy_tags:
+    - hostname
 dependencies: []
 
   

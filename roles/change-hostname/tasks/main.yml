@@ -1,4 +1,4 @@
 ---
-- name: "Update hostname"
-hostname:
-name: "{{ hostname }}"
+- name: Set hostname
+  hostname:
+    name: "{{ server_name }}"
