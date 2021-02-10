@@ -1,0 +1,10 @@
+---
+- name: Let's install NCPA
+  hosts: all
+  become: true
+  become_method: sudo
+  user: centos
+  tasks:
+  - name: install ncpa client
+    import_role:
+      name: install-ncpa
