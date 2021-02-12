@@ -1,9 +1,9 @@
-# Ansible Nagios-XI
+# Ansible Nagios-XI and NCPA
 An Ansible role for setting up the Nagios monitoring server and clients on CentOS Machines 
 
 I've only selected certain platform that I know %100 works on Centos 7.6
 
-# Requrements
+# Requirements
 Centos 7.x client machines
 
 # Installing Nagios XI Server
