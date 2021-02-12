@@ -9,14 +9,14 @@ Centos 7.x client machines
 # Installing Nagios XI Server
 To be able to install Nagios XI Server, you can use either option to complete the installation
 
-1-Bootstrapping 
+### 1-Bootstrapping 
 
 Add the following code into userdata
 ```#!/bin/bash
 sudo yum install curl -y
 sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh
 ```
-2- Using the playbook
+### 2- Using the playbook
 
 A. clone this repository into your machine
 
