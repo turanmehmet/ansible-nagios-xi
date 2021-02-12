@@ -28,9 +28,17 @@ C. Run the following command
 
 ```ansible-playbook -i inventory-nagios-xi/hosts  install-nagios-xi.yml ```
 
+# Installing Nagios Client (NCPA)
+
+Run install-ncpa.yml playbook to install the nagios on the client machines
+
+
 # Role information
-install_ncpa role gives you the ability to install client of nagios-xi to monitor the resources.
+install-ncpa role gives you the ability to install client of nagios-xi to monitor the resources.
 
 # License
 MIT
 
+# Author Information
+
+This role was created by [Mehmet Turan](https://github.com/turanmehmet).
