@@ -4,7 +4,7 @@ An Ansible role for setting up the Nagios monitoring server and clients on CentO
 I've only selected certain platform that I know %100 works on Centos 7.6
 
 # Requirements
-Centos 7.x client machines
+Centos 7.x  machines
 
 # Installing Nagios XI Server
 To be able to install Nagios XI Server, you can use either option to complete the installation
