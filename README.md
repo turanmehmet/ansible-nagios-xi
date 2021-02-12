@@ -34,14 +34,16 @@ Before you run the playbook, we need to configure your inventory. We will do thi
 Go to this file `dynamic-inventory/ec2.ini` and set up your settings based on the comments and then,
 
 Go to AWS and create a role with the following credentials and paste them in the same file (ec2.ini). 
-# aws_access_key_id = AXXXXXXXXXXXXXX
-# aws_secret_access_key = XXXXXXXXXXXXXXXXXXX
+
+`aws_access_key_id = AXXXXXXXXXXXXXX`
+`aws_secret_access_key = XXXXXXXXXXXXXXXXXXX`
 
 Run `install-ncpa.yml` playbook to install the nagios on the client machines
 
 
 # Role information
 install-nagios-xi role will install nagios xi monitor application on the desired machine.
+
 install-ncpa role gives you the ability to install client of nagios-xi to monitor the resources.
 
 # License
