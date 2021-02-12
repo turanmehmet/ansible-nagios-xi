@@ -8,10 +8,10 @@ Centos 7.x client machines
 # Installing Nagios XI Server
 Two options
 1- Add the following code into userdata
-'''#!/bin/bash
+```#!/bin/bash
 sudo yum install curl -y
 sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh
-'''
+```
 # Role information
 install_ncpa role gives you the ability to install client of nagios-xi to monitor the resources.
 
