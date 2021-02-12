@@ -35,9 +35,10 @@ Go to this file `dynamic-inventory/ec2.ini` and set up your settings based on th
 
 Go to AWS and create a role with the following credentials and paste them in the same file (ec2.ini). 
 
-`aws_access_key_id = AXXXXXXXXXXXXXX`
-`aws_secret_access_key = XXXXXXXXXXXXXXXXXXX`
-
+```
+aws_access_key_id = AXXXXXXXXXXXXXX`
+aws_secret_access_key = XXXXXXXXXXXXXXXXXXX`
+```
 Run `install-ncpa.yml` playbook to install the nagios on the client machines
 
 
