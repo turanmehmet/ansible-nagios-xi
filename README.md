@@ -1,5 +1,6 @@
 # Ansible Nagios-XI
 An Ansible role for setting up the Nagios monitoring server and clients on CentOS Machines 
+
 I've only selected certain platform that I know %100 works on Centos 7.6
 
 # Requrements
@@ -7,7 +8,9 @@ Centos 7.x client machines
 
 # Installing Nagios XI Server
 To be able to install Nagios XI Server, you can use either option to complete the installation
+
 1-Bootstrapping 
+
 Add the following code into userdata
 ```#!/bin/bash
 sudo yum install curl -y
