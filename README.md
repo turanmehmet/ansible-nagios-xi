@@ -12,7 +12,8 @@ To be able to install Nagios XI Server, you can use either option to complete th
 ### 1-Bootstrapping 
 
 Add the following code into userdata
-```#!/bin/bash
+```
+#!/bin/bash
 sudo yum install curl -y
 sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh
 ```
