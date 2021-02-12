@@ -26,8 +26,8 @@ B. Add your hostnames into inventory-nagios-xi/hosts
 
 C. Run the following command
 
-```ansible-playbook -i inventory-nagios-xi/hosts  install-nagios-xi.yml
-```
+```ansible-playbook -i inventory-nagios-xi/hosts  install-nagios-xi.yml ```
+
 # Role information
 install_ncpa role gives you the ability to install client of nagios-xi to monitor the resources.
 
